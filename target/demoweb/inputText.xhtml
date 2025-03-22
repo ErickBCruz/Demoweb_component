@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<h:head></h:head>
+<body>
+	<p:toolbar>
+		<f:facet name="left"></f:facet>
+		<f:facet name="right"></f:facet>
+	</p:toolbar>
+	
+	<div class="card">
+		<h:form>
+
+			<h5>Floating Label</h5>
+			<span class="ui-float-label"> <p:inputText id="float-input"
+					value="#{inputTextView.text}" /> <p:outputLabel for="@previous"
+					value="Username" />
+			</span>
+
+			<h:outputText value="#{inputTextView.text}"></h:outputText>
+
+		</h:form>	
+	</div>
+
+</body>
+</html>
